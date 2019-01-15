@@ -18,10 +18,9 @@ An L-layer deep neural network
 Let's look at the two architectures.
 
 3.1 - 2-layer neural network
-3.2 - L-layer deep neural network
-3.3 - General methodology
-the Deep Learning methodology to build the model:
+3.2 - 5 -layer deep neural network
 
+the Deep Learning methodology to build the model:
 1. Initialize parameters / Define hyperparameters
 2. Loop for num_iterations:
     a. Forward propagation
@@ -30,3 +29,5 @@ the Deep Learning methodology to build the model:
     d. Update parameters (using parameters, and grads from backprop) 
 4. Use trained parameters to predict labels
 
+- L-layer Neural Network
+def initialize_parameters_deep(layers_dims): ... return parameters def L_model_forward(X, parameters): ... return AL, caches def compute_cost(AL, Y): ... return cost def L_model_backward(AL, Y, caches): ... return grads def update_parameters(parameters, grads, learning_rate): ... return parameters `
